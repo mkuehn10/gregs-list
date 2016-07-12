@@ -1,18 +1,23 @@
 *, *:before, *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 75px;
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #d3d3d3;
-    font-size: 22px;
-    padding: 10px 25px;
-    border-bottom: 2px solid gray;
+    background-color: #ddd;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-bottom: 2px solid #bbb;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .logo, nav {
@@ -22,14 +27,72 @@ header {
 
 nav {
     position: absolute;
-    right: 25px;
+    right: 15px;
     top: 10px;
-
 }
 
 nav a {
-    text-decoration: none;
-    color: purple;
     padding: 5px;
+    color: purple;
 }
 
+a {
+    text-decoration: none;
+}
+
+.search {
+    margin-bottom: 25px;
+}
+
+.search input {
+}
+
+.pages {
+    display: inline-block;
+    font-size: 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.page-nav {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: inline-block;
+    color: black;
+}
+
+.index {
+    font-size: 16px;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    padding: 8px 15px;
+}
+
+.listings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listing {
+    margin-bottom: 10px;
+}
+
+.date, .location {
+    color: gray;
+    padding-left: 5px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fa-star {
+    color: gray;
+}
+
+.fa-star:hover {
+    color: yellow;
+}

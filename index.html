@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="">
+    <meta name="description" content="Greg's List for all of your software developer jobs!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Greg's List!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-    <p class="logo">Greg's List</p>
+        <p class="logo">Greg's List</p>
         <nav>
             <a href="#">Post</a>
-            <a href="#">About</a>
+            <a href="#">Account</a>
         </nav>
     </header>
 
+    <section class="search">
+        <input type="text" placeholder="search software jobs" size="50">
+        <button class="search-icon">
+            <span class="fa fa-search"></span>
+        </button>
+    </section>
+
+    <section class="pages">
+        <a class="page-nav" href="#">&lt; prev</a>
+        <span class="index">1 to 100 of 179</span>
+        <a class="page-nav" href="#">next &gt;</a>
+    </section>
+
+    <section class="listings">
+        <ul>
+            <li class="listing">
+                <span class="fa fa-star"></span>
+                <span class="date">June 22</span>
+                <a href="#" class="title">Technical Project Manager</a>
+                <span class="location">Midtown East</span>
+            </li>
+            <li class="listing">
+                <span class="fa fa-star"></span>
+                <span class="date">June 21</span>
+                <a href="#" class="title">Frontend Developer</a>
+                <span class="location">SoHo</span>
+            </li>
+            <li class="listing">
+                <span class="fa fa-star"></span>
+                <span class="date">June 22</span>
+                <a href="#" class="title">Technical Project Manager</a>
+                <span class="location">Midtown East</span>
+            </li>
+        </ul>
+    </section>
+
     <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-80275020-1', 'auto');
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 </body>
+
 </html>
